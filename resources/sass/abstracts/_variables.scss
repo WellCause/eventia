@@ -1,0 +1,19 @@
+
+// FONTS
+$font-primary: 'Muli', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+$font-heading: 'Play', sans-serif;
+$font-heading-sub: 'Open Sans', sans-serif;
+
+// COLORS
+$color-primary: #444;
+$color-grey: #696969;
+$color-grey-1: #303030;
+$color-grey-2: #3f3f3f;
+$color-white: #fff;
+$color-red: #d62434;
+$color-orange: #de7838;
+$color-yellow: #f5b916;
+
+//GRID SETUPS
+$grid-columns-center: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16.25rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];

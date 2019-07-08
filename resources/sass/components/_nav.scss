@@ -1,0 +1,18 @@
+.nav {
+
+    &__list {
+        list-style: none;
+        display: flex;
+
+        & > *:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: inherit;
+        font-weight: inherit;
+    }
+}

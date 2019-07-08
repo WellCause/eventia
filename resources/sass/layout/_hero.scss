@@ -1,0 +1,16 @@
+.hero {
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: $grid-columns-center; 
+    background-image: linear-gradient(to right bottom, rgba($color-yellow, .6) 10%, rgba($color-red, .4) 35%, rgba(transparent, .4) 100%), url(../img/guru-compressor.jpg);
+    background-size: cover;
+    height: 100vh;
+
+    &__title {
+        grid-column: center-start / col-end 4;
+    }
+
+    .banner {
+        grid-column: col-start 5 / center-end;
+    }
+}
