@@ -6,10 +6,20 @@
     align-items: center;
     font-size: 2rem;
 
+    &--small {
+        font-size: 1.5rem;
+    }
+
     &__icon {
         height: 3rem;
         width: 3rem;
         margin-left: 1rem;
+
+        &--small {
+            margin-left: .5rem;
+            height: 2rem;
+            width: 2rem;
+        }
     }
 
     &--orange {
@@ -27,5 +37,13 @@
 
     &:hover &__icon {
         animation: btn-slide .6s ease-out infinite;
+    }
+
+    &:focus &__icon--small {
+        animation: btn-slide-small .5s ease-out infinite;
+    }
+
+    &:hover &__icon--small {
+        animation: btn-slide-small .5s ease-out infinite;
     }
 }

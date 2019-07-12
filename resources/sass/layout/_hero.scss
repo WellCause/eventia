@@ -18,7 +18,6 @@
         display: grid;
         grid-row-gap: 1.5rem;
 
-
         .heading-1 {
             line-height: .9;
 
@@ -27,6 +26,13 @@
                 font-size: 12rem;
             }
         }
+    }
+
+    &__sub-heading {
+        line-height: 1.3;
+        font-size: 3rem;
+        font-weight: 300;
+        font-family: $font-heading-sub;
     }
 
     &__text {

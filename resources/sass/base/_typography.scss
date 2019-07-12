@@ -1,20 +1,33 @@
-.heading-1 {
-    font-size: 8rem;
-    font-family: $font-heading;
+.heading {
     text-transform: uppercase;
 }
 
+.heading-1 {
+    @extend .heading;
+    font-size: 8rem;
+    font-family: $font-heading;
+}
+
 .heading-2 {
+    @extend .heading;
     line-height: 1.3;
-    font-size: 3rem;
+    font-size: 8rem;
     font-weight: 300;
     font-family: $font-heading-sub;
 }
 
 .heading-3 {
+    @extend .heading;
     font-weight: 700;
     color: #000;
     font-family: $font-secondary;
-    text-transform: uppercase;
     font-size: 3.8rem;
+}
+
+.heading-4 {
+    @extend .heading;
+    font-weight: 700;
+    color: #000;
+    font-family: $font-secondary;
+    font-size: 2rem;
 }

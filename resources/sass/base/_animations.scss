@@ -11,3 +11,17 @@
         margin-left: 1rem;
     }
 }
+
+@keyframes btn-slide-small {
+    0% {
+        margin-left: .5rem;
+    }
+
+    20% {
+        margin-left: 1rem;
+    }
+
+    100% {
+        margin-left: .5rem;
+    }
+}
