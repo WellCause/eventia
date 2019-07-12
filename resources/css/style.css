@@ -476,3 +476,16 @@ body {
     font-size: 1.6rem;
     width: 60%;
     text-align: center; }
+
+.sponsors {
+  grid-column: center-start / center-end;
+  text-align: center;
+  padding: 8rem 0; }
+  .sponsors .heading-2 {
+    margin-bottom: 8rem; }
+  .sponsors__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: center;
+    grid-row-gap: 10rem;
+    justify-items: center; }

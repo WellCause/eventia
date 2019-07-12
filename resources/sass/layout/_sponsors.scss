@@ -1,0 +1,17 @@
+.sponsors {
+    grid-column: center-start / center-end;
+    text-align: center;
+    padding: 8rem 0;
+
+    .heading-2 {
+        margin-bottom: 8rem;
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        align-items: center;
+        grid-row-gap: 10rem;
+        justify-items: center;
+    }
+}
