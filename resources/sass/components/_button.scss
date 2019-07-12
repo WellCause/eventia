@@ -1,0 +1,31 @@
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        margin-left: 1rem;
+    }
+
+    &--orange {
+        color: $color-orange-1;
+        fill: $color-orange-1;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus &__icon {
+        animation: btn-slide .6s ease-out infinite;
+    }
+
+    &:hover &__icon {
+        animation: btn-slide .6s ease-out infinite;
+    }
+}

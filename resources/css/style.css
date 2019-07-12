@@ -30,6 +30,21 @@ body {
   font-weight: 300;
   font-family: "Open Sans", sans-serif; }
 
+.heading-3 {
+  font-weight: 700;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.8rem; }
+
+@keyframes btn-slide {
+  0% {
+    margin-left: 1rem; }
+  20% {
+    margin-left: 2rem; }
+  100% {
+    margin-left: 1rem; } }
+
 .nav__list {
   list-style: none;
   display: flex; }
@@ -45,8 +60,8 @@ body {
   text-shadow: 0 0 .3rem #000; }
 
 .nav__link:hover {
-  color: #ff7e05;
-  border-bottom: 2px solid #ff7e05; }
+  color: #ff512f;
+  border-bottom: 2px solid #ff512f; }
 
 .banner {
   color: #fff;
@@ -141,6 +156,7 @@ body {
     align-items: center;
     background-image: linear-gradient(to right, #d62434, #de7838); }
   .banner__sponsor {
+    font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 4rem; }
@@ -152,6 +168,27 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.3rem; }
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 2rem; }
+  .btn__icon {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem; }
+  .btn--orange {
+    color: #ff512f;
+    fill: #ff512f; }
+  .btn:focus {
+    outline: none; }
+  .btn:focus .btn__icon {
+    animation: btn-slide .6s ease-out infinite; }
+  .btn:hover .btn__icon {
+    animation: btn-slide .6s ease-out infinite; }
 
 .header {
   font-weight: 600;
@@ -197,3 +234,37 @@ body {
     font-size: 1.5rem; }
   .hero .banner {
     grid-column: col-start 5 / center-end; }
+
+.explore {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+  justify-items: center;
+  padding: 5rem 8rem 15rem 8rem;
+  position: relative;
+  grid-row-gap: 5rem; }
+  .explore__caption {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-row-gap: 3.5rem; }
+    .explore__caption .heading-3 span {
+      color: #ff512f; }
+    .explore__caption .btn {
+      justify-self: start; }
+  .explore__text {
+    font-size: 1.6rem; }
+  .explore__container {
+    position: relative; }
+    .explore__container::before {
+      content: '';
+      width: 90%;
+      height: 100%;
+      border: 1px solid #505050;
+      position: absolute;
+      top: 0;
+      left: 5rem; }
+  .explore__img {
+    max-width: 100%;
+    justify-self: end;
+    transform: translate(8rem, 3rem); }

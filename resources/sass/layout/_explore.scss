@@ -1,0 +1,50 @@
+.explore {
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    justify-items: center;
+    padding: 5rem 8rem 15rem 8rem;
+    position: relative;
+    grid-row-gap: 5rem;
+
+    &__caption {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-row-gap: 3.5rem;
+
+        .heading-3 {
+            span {
+                color: $color-orange-1;
+            }
+        }
+
+        .btn {
+            justify-self: start;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+    }
+
+    &__container {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 90%;
+            height: 100%;
+            border: 1px solid $color-grey-3;
+            position: absolute;
+            top: 0;
+            left: 5rem;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        justify-self: end;
+        transform: translate(8rem, 3rem);
+    }
+}
