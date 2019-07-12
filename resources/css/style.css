@@ -204,6 +204,37 @@ body {
   .btn--orange {
     color: #ff512f;
     fill: #ff512f; }
+  .btn--transparent {
+    margin-top: 4rem;
+    position: relative;
+    color: #fff;
+    transition: all .2s; }
+    .btn--transparent::before {
+      content: '';
+      width: 150%;
+      height: 300%;
+      position: absolute;
+      top: -2.3rem;
+      left: -6.5rem;
+      border: 1px solid #fff;
+      padding: 1rem;
+      transition: all .2s; }
+    .btn--transparent::after {
+      content: '';
+      width: 150%;
+      height: 300%;
+      position: absolute;
+      top: -3.3rem;
+      left: -7.5rem;
+      border: 1px solid #fff;
+      padding: 1rem;
+      transition: all .2s; }
+    .btn--transparent:hover:after, .btn--transparent:focus:after {
+      top: -2.3rem;
+      left: -6.5rem; }
+    .btn--transparent:hover:before, .btn--transparent:focus:before {
+      top: -3.3rem;
+      left: -7.5rem; }
   .btn:focus {
     outline: none; }
   .btn:focus .btn__icon,
@@ -427,3 +458,21 @@ body {
     font-size: 1.2rem;
     color: #696969;
     text-transform: uppercase; }
+
+.overview {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(to right, rgba(214, 36, 52, 0.9), rgba(222, 120, 56, 0.9)), url(../img/overview-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: grid;
+  grid-row-gap: 3rem;
+  justify-items: center;
+  padding: 10rem 0 13rem 0; }
+  .overview .heading-2 {
+    text-transform: capitalize;
+    font-size: 6rem; }
+  .overview__text {
+    font-size: 1.6rem;
+    width: 60%;
+    text-align: center; }
