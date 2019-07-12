@@ -7,17 +7,25 @@ $font-heading-sub: 'Open Sans', sans-serif;
 
 // COLORS
 $color-primary: #444;
+
 $color-grey: #696969;
 $color-grey-1: #303030;
 $color-grey-2: #3f3f3f;
 $color-grey-3: #505050;
 $color-grey-bg: #f3f3f3;
+
 $color-white: #fff;
+
 $color-red: #d62434;
 $color-orange: #de7838;
 $color-orange-1: #ff512f;
 $color-yellow: #f5b916;
 $color-yellow-1: #ff7e05;
+
+$color-facebook: #1877f2;
+$color-twitter: #1da1f2;
+$color-linkedin: #007bb5;
+$color-google: #db4437;
 
 //GRID SETUPS
 $grid-columns-center: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16.25rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];

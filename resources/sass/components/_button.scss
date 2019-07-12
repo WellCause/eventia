@@ -31,19 +31,13 @@
         outline: none;
     }
 
-    &:focus &__icon {
-        animation: btn-slide .6s ease-out infinite;
-    }
-
+    &:focus &__icon,
     &:hover &__icon {
         animation: btn-slide .6s ease-out infinite;
     }
 
-    &:focus &__icon--small {
-        animation: btn-slide-small .5s ease-out infinite;
-    }
-
+    &:focus &__icon--small,
     &:hover &__icon--small {
-        animation: btn-slide-small .5s ease-out infinite;
+        animation: btn-slide-small .6s ease-out infinite;
     }
-}
+}   
