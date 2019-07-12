@@ -14,5 +14,13 @@
         text-decoration: none;
         color: inherit;
         font-weight: inherit;
+        border-bottom: 2px solid transparent;
+        transition: all .2s;
+        text-shadow: 0 0 .3rem #000;
+    }
+
+    &__link:hover {
+        color: $color-yellow-1;
+        border-bottom: 2px solid $color-yellow-1;
     }
 }

@@ -12,9 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 0;
 
     &__logo {
         justify-self: start;
+        cursor: pointer;
     }
 
     .nav {

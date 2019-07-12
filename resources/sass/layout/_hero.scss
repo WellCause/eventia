@@ -1,13 +1,36 @@
 .hero {
     grid-column: full-start / full-end;
     display: grid;
-    grid-template-columns: $grid-columns-center; 
-    background-image: linear-gradient(to right bottom, rgba($color-yellow, .6) 10%, rgba($color-red, .4) 35%, rgba(transparent, .4) 100%), url(../img/guru-compressor.jpg);
+    grid-template-columns: $grid-columns-center;
+    background-image: linear-gradient(120deg,
+            rgba($color-yellow-1, .6) 15%,
+            rgba($color-red, .4) 40%,
+            rgba(transparent, 0) 75%),
+        url(../img/hero-bg.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 
     &__title {
         grid-column: center-start / col-end 4;
+        align-self: center;
+        color: $color-white;
+        display: grid;
+        grid-row-gap: 1.5rem;
+
+
+        .heading-1 {
+            line-height: .9;
+
+            span {
+                display: block;
+                font-size: 12rem;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
     }
 
     .banner {
