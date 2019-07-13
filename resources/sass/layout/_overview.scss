@@ -3,16 +3,12 @@
     background-image: linear-gradient(to right, rgba($color-red, .9), rgba($color-orange, .9)), url(../img/overview-bg.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: $color-white;
     display: grid;
     grid-row-gap: 3rem;
     justify-items: center;
     padding: 10rem 0 13rem 0;
-
-    .heading-2 {
-        text-transform: capitalize;
-        font-size: 6rem;
-    }
 
     &__text {
         font-size: 1.6rem;

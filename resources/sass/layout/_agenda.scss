@@ -1,0 +1,185 @@
+.agenda {
+    grid-column: center-start / center-end;
+    display: grid;
+    padding: 8rem 0;
+    grid-row-gap: 5rem;
+
+    .heading-2 {
+        text-align: center;
+    }
+
+    &__selection {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-self: center;
+        grid-column-gap: 2rem;
+        z-index: 2;
+        align-content: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 140%;
+            height: .1rem;
+            top: 2.3rem;
+            left: -20%;
+            z-index: 1;
+            background-image: linear-gradient(to right,
+                    transparent 0%,
+                    $color-red 20%,
+                    $color-red 80%,
+                    transparent 100%);
+        }
+    }
+
+    &__select {
+        position: relative;
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+        box-shadow: 0 1px 1px $color-red;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: box-shadow .2s;
+        z-index: 3;
+        background-color: $color-white;
+
+        &:hover {
+            box-shadow: 0 .2rem .2rem 0 $color-red;
+        }
+
+        &--selected {
+            background-image: linear-gradient(to right, $color-red, $color-yellow-1);
+            color: $color-white;
+            box-shadow: none;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__schedule {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-row-gap: 2rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            left: 20%;
+            background-image: linear-gradient(to bottom,
+                    transparent 0%,
+                    $color-red 30%,
+                    $color-red 70%,
+                    transparent 100%);
+        }
+    }
+
+    &__time {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__time-exact {
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: $font-secondary;
+        line-height: 1.5;
+    }
+
+    &__time-range {
+        display: flex;
+        align-items: center;
+        color: $color-orange-1;
+        font-size: 1.5rem;
+    }
+
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: $color-orange-1;
+        margin-right: .5rem;
+    }
+
+    &__event {
+        padding: 3rem 2rem;
+        box-shadow: .1rem .1rem .4rem rgba($color-grey, .2);
+        display: grid;
+        grid-row-gap: 2rem;
+        position: relative;
+
+        .heading-5 {
+            margin-left: 3.5rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 3rem;
+            width: 3rem;
+            background-color: $color-orange-1;
+            top: 5.5rem;
+            left: -1.5rem;
+            border-radius: 50%;
+        }
+
+        &--upcoming::before {
+            content: '';
+            position: absolute;
+            height: 3rem;
+            width: 3rem;
+            border: 1px solid $color-orange-1;
+            background-color: transparent;
+            top: 5.5rem;
+            left: -1.5rem;
+            border-radius: 50%;
+        }
+
+        &--upcoming::after {
+            content: '';
+            position: absolute;
+            height: 2rem;
+            width: 2rem;
+            background-color: $color-orange-1;
+            top: 6rem;
+            left: -1rem;
+            border-radius: 50%;
+        }
+
+        &--main::after {
+            content: 'Room no - 04';
+            color: $color-white;
+            font-size: 1.5rem;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, $color-red, $color-yellow-1);
+            position: absolute;
+            height: 2.5rem;
+            width: 15rem;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__name {
+        color: $color-orange-1;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-left: 3.5rem;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        margin: 0 3.5rem;
+    }
+}
