@@ -70,6 +70,14 @@
         }
     }
 
+    &--gradient {
+        background-image: linear-gradient(to right, $color-red, $color-yellow-1);
+        padding: 1.5rem 2.5rem;
+        color: $color-white;
+        text-transform: uppercase;
+        font-family: $font-heading-sub;
+    }
+
     &:focus {
         outline: none;
     }

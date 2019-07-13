@@ -1,3 +1,88 @@
 .footer {
+    grid-column: full-start / full-end;
+    background-color: $color-grey-footer;
+    padding: 8rem;
+    display: grid;
+    grid-row-gap: 2rem;
+    justify-content: center;
+    justify-items: center;
     
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: $color-grey-social;
+    }
+
+    &__socials {
+        display: flex;
+
+        & > *:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__icon-container {
+
+        & > * {
+            transition: fill .2s;
+            cursor: pointer;
+        }
+
+        &:first-child {
+
+            &:hover svg {
+                fill: $color-twitter;
+            }
+        }
+
+        &:nth-child(2) {
+
+            &:hover svg {
+                fill: $color-facebook;
+            }
+        }
+
+        &:nth-child(3) {
+            &:hover svg {
+                fill: $color-google;
+            }
+        }
+
+        &:nth-child(4) {
+            &:hover svg {
+                fill: $color-linkedin;
+            }
+        }
+
+        &:nth-child(5) {
+            &:hover svg {
+                fill: $color-twitch;
+            }
+        }
+
+        &:nth-child(6) {
+            &:hover svg {
+                fill: $color-skype;
+            }
+        }
+    }
+
+    &__subscribe {
+        display: flex;
+    }
+
+    &__input {
+        background-color: $color-grey-social;
+        border: none;
+        width: 30rem;
+        padding: 1rem;
+        color: $color-grey-input;
+        font-size: 1.5rem;
+        font-family: $font-heading-sub;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: $color-grey-bg;
+    }
 }
