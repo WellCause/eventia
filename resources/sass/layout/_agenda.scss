@@ -4,6 +4,10 @@
     padding: 8rem 0 11rem 0;
     grid-row-gap: 5rem;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 4rem 0 5.5rem 0;
+    }
+
     .heading-2 {
         text-align: center;
     }
@@ -30,6 +34,11 @@
                     $color-red 20%,
                     $color-red 80%,
                     transparent 100%);
+
+            @media only screen and (max-width: $bp-small) {
+                width: 100%;
+                left: 0;
+            }
         }
     }
 
@@ -85,6 +94,7 @@
         justify-items: center;
         align-items: center;
         align-content: center;
+        margin-right: 2rem;
     }
 
     &__time-exact {

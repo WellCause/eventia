@@ -11,6 +11,14 @@
     background-position: center;
     height: 100vh;
 
+    @media only screen and (max-width: $bp-large) {
+        height: 150vh;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        justify-items: center;
+    }
+
     &__title {
         grid-column: center-start / col-end 4;
         align-self: center;
@@ -26,6 +34,16 @@
                 font-size: 12rem;
             }
         }
+        
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 10rem;
+            grid-column: 1 / -1;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 18rem;
+        }
     }
 
     &__sub-heading {
@@ -40,6 +58,24 @@
     }
 
     .banner {
+        margin-top: 10rem;
         grid-column: col-start 5 / center-end;
+        align-self: start;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 3rem;
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 80%;
+        }
+
+        & img {
+            @media only screen and (max-width: $bp-small) {
+                max-width: 80%;
+            }
+        }
     }
 }

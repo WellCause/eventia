@@ -4,6 +4,10 @@
     grid-template-columns: $grid-columns-center;
     background-color: $color-grey-bg;
     padding: 10rem 0;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 0;
+    }
     
     &__heading {
         display: grid;        

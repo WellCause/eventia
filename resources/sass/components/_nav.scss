@@ -4,8 +4,13 @@
         list-style: none;
         display: flex;
 
-        & > *:not(:last-child) {
+        &>*:not(:last-child) {
             margin-right: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 

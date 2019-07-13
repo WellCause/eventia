@@ -37,4 +37,7 @@ $color-skype: #00aff0;
 $grid-columns-center: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16.25rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
 
 //BREAKPOINTS
-$bp-largest: 68.75em;
+$bp-largest: 86.25em;
+$bp-large: 68.75em;
+$bp-medium: 50em;
+$bp-small: 39.375em;

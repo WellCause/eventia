@@ -7,6 +7,16 @@
     position: relative;
     grid-row-gap: 5rem;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 6rem 4rem 7.5rem 4rem;
+    }
+
+    .heading-3 {
+        @media only screen and (max-width: $bp-small) {
+            max-width: 80%;
+        }
+    }
+
     &__caption {
         display: grid;
         align-items: center;
@@ -26,6 +36,10 @@
 
     &__text {
         font-size: 1.6rem;
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 80%;
+        }
     }
 
     &__container {
@@ -39,6 +53,10 @@
             position: absolute;
             top: 0;
             left: 5rem;
+
+            @media only screen and (max-width: $bp-small) {
+                display: none;
+            }
         }
     }
 
@@ -46,5 +64,11 @@
         max-width: 100%;
         justify-self: end;
         transform: translate(8rem, 3rem);
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 80%;
+            justify-self: center;
+            transform: translate(0, 0);
+        }
     }
 }
