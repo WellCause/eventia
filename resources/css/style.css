@@ -407,6 +407,8 @@ body {
       margin-right: 1rem; }
   .speakers__icon-container {
     position: absolute; }
+    .speakers__icon-container > * {
+      transition: fill .2s; }
     .speakers__icon-container:first-child {
       top: 0;
       left: 5.5rem; }
@@ -448,7 +450,6 @@ body {
     cursor: pointer; }
   .speakers__img {
     width: 100%;
-    cursor: pointer;
     transition: filter .2s; }
   .speakers__persons {
     display: grid;
@@ -516,7 +517,7 @@ body {
 .agenda {
   grid-column: center-start / center-end;
   display: grid;
-  padding: 8rem 0;
+  padding: 8rem 0 11rem 0;
   grid-row-gap: 5rem; }
   .agenda .heading-2 {
     text-align: center; }
@@ -647,3 +648,36 @@ body {
   .agenda__text {
     font-size: 1.5rem;
     margin: 0 3.5rem; }
+
+.posts {
+  padding: 8rem 0;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16.25rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+  background-color: #f3f3f3; }
+  .posts .heading-2 {
+    text-align: center; }
+  .posts__container {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-row-gap: 8rem; }
+  .posts__posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-column-gap: 3rem; }
+  .posts__post {
+    display: grid;
+    grid-row-gap: 1.5rem; }
+  .posts__img {
+    width: 100%; }
+  .posts__text {
+    font-size: 1.5rem; }
+  .posts__sub-info {
+    text-transform: uppercase;
+    display: flex; }
+    .posts__sub-info :not(:first-child) {
+      margin-left: 2rem;
+      cursor: pointer; }
+
+.map {
+  grid-column: full-start / full-end; }

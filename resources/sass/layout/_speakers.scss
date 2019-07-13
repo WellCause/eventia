@@ -46,6 +46,10 @@
     &__icon-container {
         position: absolute;
 
+        & > * {
+            transition: fill .2s;
+        }
+
         &:first-child {
             top: 0;
             left: 5.5rem;
@@ -108,7 +112,6 @@
 
     &__img {
         width: 100%;
-        cursor: pointer;
         transition: filter .2s;
     }
 
