@@ -441,11 +441,203 @@
         <section id="agenda" class="agenda">
             <h2 class="heading-2">Conference agenda</h2>
             <div class="agenda__selection">
-                <span class="agenda__select agenda__select--selected">Day 1, June 18</span>
-                <span class="agenda__select">Day 2, June 19</span>
-                <span class="agenda__select">Day 3, June 20</span>
+                <button id="default" class="agenda__select agenda__select--selected" onclick="changeDay(event, 'day-1')">Day 1, June 18</button>
+                <button class="agenda__select" onclick="changeDay(event, 'day-2')">Day 2, June 19</button>
+                <button class="agenda__select" onclick="changeDay(event, 'day-3')">Day 3, June 20</button>
             </div>
-            <div class="agenda__schedule">
+            <div id="day-1" class="agenda__schedule">
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">08 : 30 AM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>8:30AM - 9:00AM</span>
+                    </div>
+                </div>
+                <div class="agenda__event agenda__event--upcoming">
+                    <h5 class="heading-5">Celebratory reception</h5>
+                    <p class="agenda__text">
+                        Enjoy a live acoustic guitar performance by Tim Bond and an inventive, multi-course dinner menu
+                        curated by Top Chef Masters alum, Chef Monica Pope…</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">09 : 00 AM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>9:00AM - 9:30AM</span>
+                    </div>
+                </div>
+                <div class="agenda__event agenda__event--main">
+                    <div>
+                        <h5 class="heading-5">Conference opening</h5>
+                        <span class="agenda__name">David Humber, CEO - DSS</span>
+                    </div>
+                    <p class="agenda__text">
+                        Pride & Predudice: developing a three-year, three-continent, multichannel marketing campaign
+                        with global reach yet taking account of local and regional sensitivities</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">09 : 30 AM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>9:30AM - 12:30PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Main stage panel discussions</h5>
+                    <p class="agenda__text">
+                        Pride & Predudice: developing a three-year, three-continent, multichannel marketing campaign
+                        with global reach yet taking account of local and regional sensitivities</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">12 : 30 PM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>12:30PM - 1:30PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Lunch with asian buffet</h5>
+                    <p class="agenda__text">
+                        You will have a chance to enjoy lunch with Asian Buffet. There are many types of food for your
+                        lunch. You feel free to enjoy buffet with your partners. Especially, you are going to have
+                        ice-cream, small cakes or fruits to finish your meal off.</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">01 : 30 PM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>1:30PM - 2:30PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Multichannel marketing campaign</h5>
+                    <p class="agenda__text">
+                        Pride & Predudice: developing a three-year, three-continent, multichannel marketing campaign
+                        with global reach yet taking account of local and regional sensitivities</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">02 : 30 PM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>2:30PM - 3:00PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Closing of conference day</h5>
+                    <p class="agenda__text">
+                        Everyone in meeting will summaries ideas which gave during the conference. The closing of
+                        conference is the end. The secretary writes all things to manager and process in future.</p>
+                </div>
+            </div>
+            <div id="day-2" class="agenda__schedule">
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">09 : 30 AM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>9:30AM - 10:00AM</span>
+                    </div>
+                </div>
+                <div class="agenda__event agenda__event--upcoming">
+                    <h5 class="heading-5">Celebratory reception</h5>
+                    <p class="agenda__text">
+                        Enjoy a live acoustic guitar performance by Tim Bond and an inventive, multi-course dinner menu
+                        curated by Top Chef Masters alum, Chef Monica Pope…</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">10 : 00 AM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>10:00AM - 10:30AM</span>
+                    </div>
+                </div>
+                <div class="agenda__event agenda__event--main">
+                    <div>
+                        <h5 class="heading-5">Conference opening</h5>
+                        <span class="agenda__name">David Humber, CEO - DSS</span>
+                    </div>
+                    <p class="agenda__text">
+                        Pride & Predudice: developing a three-year, three-continent, multichannel marketing campaign
+                        with global reach yet taking account of local and regional sensitivities</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">10 : 30 AM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>10:30AM - 13:30PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Main stage panel discussions</h5>
+                    <p class="agenda__text">
+                        Pride & Predudice: developing a three-year, three-continent, multichannel marketing campaign
+                        with global reach yet taking account of local and regional sensitivities</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">12 : 30 PM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>12:30PM - 1:30PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Lunch with asian buffet</h5>
+                    <p class="agenda__text">
+                        You will have a chance to enjoy lunch with Asian Buffet. There are many types of food for your
+                        lunch. You feel free to enjoy buffet with your partners. Especially, you are going to have
+                        ice-cream, small cakes or fruits to finish your meal off.</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">01 : 30 PM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>1:30PM - 2:30PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Multichannel marketing campaign</h5>
+                    <p class="agenda__text">
+                        Pride & Predudice: developing a three-year, three-continent, multichannel marketing campaign
+                        with global reach yet taking account of local and regional sensitivities</p>
+                </div>
+                <div class="agenda__time">
+                    <span class="agenda__time-exact">02 : 30 PM</span>
+                    <div class="agenda__time-range">
+                        <svg class="agenda__icon">
+                            <use xlink:href="resources/img/sprite.svg#icon-stopwatch">
+                        </svg>
+                        <span>2:30PM - 3:00PM</span>
+                    </div>
+                </div>
+                <div class="agenda__event">
+                    <h5 class="heading-5">Closing of conference day</h5>
+                    <p class="agenda__text">
+                        Everyone in meeting will summaries ideas which gave during the conference. The closing of
+                        conference is the end. The secretary writes all things to manager and process in future.</p>
+                </div>
+            </div>
+            <div id="day-3" class="agenda__schedule">
                 <div class="agenda__time">
                     <span class="agenda__time-exact">08 : 30 AM</span>
                     <div class="agenda__time-range">
@@ -651,6 +843,7 @@
         </div>
         <span class="footer__text">Coded by ViperART, PSD template and &copy; copyright belong to THEMEXPERT</span>
     </footer>
+    <script async src="resources/js/tabber.js"></script>
     <script async src="resources/js/timer.js"></script>
 </body>
 

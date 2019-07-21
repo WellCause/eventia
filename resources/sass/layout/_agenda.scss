@@ -52,9 +52,15 @@
         transition: box-shadow .2s;
         z-index: 3;
         background-color: $color-white;
+        border: none;
 
         &:hover {
             box-shadow: 0 .2rem .2rem 0 $color-red;
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
         }
 
         &--selected {
@@ -62,7 +68,9 @@
             color: $color-white;
             box-shadow: none;
 
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
                 box-shadow: none;
             }
         }
@@ -73,6 +81,7 @@
         grid-template-columns: 1fr 4fr;
         grid-row-gap: 2rem;
         position: relative;
+        animation: fade 1s;
 
         &::before {
             content: '';

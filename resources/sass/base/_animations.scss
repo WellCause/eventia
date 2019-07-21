@@ -25,3 +25,8 @@
         margin-left: .5rem;
     }
 }
+
+@keyframes fade {
+    from {opacity: 0};
+    to {opacity: 1};
+}
