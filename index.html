@@ -20,19 +20,19 @@
         </div>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Speakers</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Venue</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Schedule</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Partners</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Register</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Pages</a></li>
+                <li class="nav__item"><a href="#main" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#explore" class="nav__link">Explore</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#speakers" class="nav__link">Speakers</a></li>
+                <li class="nav__item"><a href="#overview" class="nav__link">Overview</a></li>
+                <li class="nav__item"><a href="#sponsors" class="nav__link">Sponsors</a></li>
+                <li class="nav__item"><a href="#agenda" class="nav__link">Schedule</a></li>
+                <li class="nav__item"><a href="#subscribe" class="nav__link">Subscribe</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main">
+    <main id="main" class="main">
         <section class="hero">
             <div class="hero__title">
                 <span class="hero__sub-heading">Europe’s Largest Event Summit</span>
@@ -43,19 +43,19 @@
             <div class="banner">
                 <div class="banner__countdown">
                     <div class="banner__timing">
-                        <div class="banner__number">360</div>
+                        <div id="banner__days" class="banner__number"></div>
                         <div class="banner__unit">Days</div>
                     </div>
                     <div class="banner__timing">
-                        <div class="banner__number">12</div>
+                        <div id="banner__hours" class="banner__number"></div>
                         <div class="banner__unit">hours</div>
                     </div>
                     <div class="banner__timing">
-                        <div class="banner__number">36</div>
+                        <div id="banner__minutes" class="banner__number"></div>
                         <div class="banner__unit">minutes</div>
                     </div>
                     <div class="banner__timing">
-                        <div class="banner__number">52</div>
+                        <div id="banner__seconds" class="banner__number"></div>
                         <div class="banner__unit">seconds</div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
             </div>
         </section>
 
-        <section class="explore">
+        <section id="explore" class="explore">
             <div class="explore__caption">
                 <h3 class="heading-3">To explore Business Event get ready with more than <span>10000</span> people.</h3>
                 <p class="explore__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="about__container">
                 <div class="about__heading">
                     <h2 class="heading-2">About this event</h2>
@@ -156,7 +156,7 @@
             </div>
         </section>
 
-        <section class="speakers">
+        <section id="speakers" class="speakers">
             <div class="speakers__container">
                 <h2 class="heading-2">Speakers</h2>
                 <div class="speakers__persons">
@@ -396,7 +396,7 @@
             </div>
         </section>
 
-        <section class="overview">
+        <section id="overview" class="overview">
             <h2 class="heading-2 heading-2--small">Europe’s largest event summit</h2>
             <p class="overview__text">If you are wondering what kind of a place you are going to visit when you
                 participate in this exciting conference, move your mouse to the point you wish to see. Take a complete
@@ -408,7 +408,7 @@
             </div>
         </section>
 
-        <section class="sponsors">
+        <section id="sponsors" class="sponsors">
             <h2 class="heading-2">Current &#38; Past Sponsors</h2>
             <div class="sponsors__images">
                 <img src="resources/img/sponsor-1.png" alt="Sponsor 1" class="sponsors__sponsor">
@@ -438,7 +438,7 @@
             </div>
         </section>
 
-        <section class="agenda">
+        <section id="agenda" class="agenda">
             <h2 class="heading-2">Conference agenda</h2>
             <div class="agenda__selection">
                 <span class="agenda__select agenda__select--selected">Day 1, June 18</span>
@@ -610,7 +610,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer id="subscribe" class="footer">
         <img class="footer__logo" src="resources/img/logo.png" alt="Eventia logo">
         <span class="footer__text">Subscribe to our Newsletter</span>
         <form action="#" class="footer__subscribe">
@@ -651,6 +651,7 @@
         </div>
         <span class="footer__text">Coded by ViperART, PSD template and &copy; copyright belong to THEMEXPERT</span>
     </footer>
+    <script async src="resources/js/timer.js"></script>
 </body>
 
 </html>
