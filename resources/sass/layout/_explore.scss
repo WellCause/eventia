@@ -6,9 +6,10 @@
     padding: 12rem 8rem 15rem 8rem;
     position: relative;
     grid-row-gap: 5rem;
-
+    
     @media only screen and (max-width: $bp-small) {
         padding: 6rem 4rem 7.5rem 4rem;
+        margin-top: 18rem;
     }
 
     .heading-3 {
@@ -22,6 +23,11 @@
         align-items: center;
         align-content: center;
         grid-row-gap: 3.5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 75%;
+        }
+        
 
         .heading-3 {
             span {
@@ -44,6 +50,11 @@
 
     &__container {
         position: relative;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 75%;
+        }
+        
 
         &::before {
             content: '';

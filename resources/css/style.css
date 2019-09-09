@@ -338,6 +338,9 @@ body {
     max-width: 100%;
     position: fixed;
     z-index: 100; }
+    @media only screen and (max-width: 50em) {
+      .header--sticky {
+        padding: 0; } }
   @media only screen and (max-width: 86.25em) {
     .header {
       padding: 2rem 4rem; } }
@@ -424,7 +427,8 @@ body {
   grid-row-gap: 5rem; }
   @media only screen and (max-width: 39.375em) {
     .explore {
-      padding: 6rem 4rem 7.5rem 4rem; } }
+      padding: 6rem 4rem 7.5rem 4rem;
+      margin-top: 18rem; } }
   @media only screen and (max-width: 39.375em) {
     .explore .heading-3 {
       max-width: 80%; } }
@@ -433,6 +437,9 @@ body {
     align-items: center;
     align-content: center;
     grid-row-gap: 3.5rem; }
+    @media only screen and (max-width: 39.375em) {
+      .explore__caption {
+        width: 75%; } }
     .explore__caption .heading-3 span {
       color: #ff512f; }
     .explore__caption .btn {
@@ -444,6 +451,9 @@ body {
         max-width: 80%; } }
   .explore__container {
     position: relative; }
+    @media only screen and (max-width: 39.375em) {
+      .explore__container {
+        width: 75%; } }
     .explore__container::before {
       content: '';
       width: 90%;
