@@ -441,7 +441,8 @@
         <section id="agenda" class="agenda">
             <h2 class="heading-2">Conference agenda</h2>
             <div class="agenda__selection">
-                <button id="default" class="agenda__select agenda__select--selected" onclick="changeDay(event, 'day-1')">Day 1, June 18</button>
+                <button id="default" class="agenda__select agenda__select--selected"
+                    onclick="changeDay(event, 'day-1')">Day 1, June 18</button>
                 <button class="agenda__select" onclick="changeDay(event, 'day-2')">Day 2, June 19</button>
                 <button class="agenda__select" onclick="changeDay(event, 'day-3')">Day 3, June 20</button>
             </div>
@@ -843,8 +844,9 @@
         </div>
         <span class="footer__text">Coded by ViperART, PSD template and &copy; copyright belong to THEMEXPERT</span>
     </footer>
-    <script async src="resources/js/tabber.js"></script>
-    <script async src="resources/js/timer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script async src="resources/js/vendors/jquery.waypoints.min.js"></script>   
+    <script async src="resources/js/main.js"></script>
 </body>
 
 </html>

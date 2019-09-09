@@ -332,6 +332,12 @@ body {
   grid-template-columns: 1fr 4fr;
   align-items: center;
   padding: 2rem 0; }
+  .header--sticky {
+    background-color: #303030;
+    padding: 1rem 30rem;
+    max-width: 100%;
+    position: fixed;
+    z-index: 100; }
   @media only screen and (max-width: 86.25em) {
     .header {
       padding: 2rem 4rem; } }
@@ -340,7 +346,9 @@ body {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr); } }
   .header__logo {
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 3rem;
+    display: flex; }
     @media only screen and (max-width: 50em) {
       .header__logo {
         justify-self: center; } }

@@ -13,7 +13,16 @@
     grid-template-columns: 1fr 4fr;
     align-items: center;
     padding: 2rem 0;
-    
+
+
+    &--sticky {
+        background-color: $color-grey-1;
+        padding: 1rem 30rem;
+        max-width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+
 
     @media only screen and (max-width: $bp-largest) {
         padding: 2rem 4rem;
@@ -26,6 +35,9 @@
 
     &__logo {
         cursor: pointer;
+        margin-right: 3rem;
+        display: flex;
+
 
         @media only screen and (max-width: $bp-medium) {
             justify-self: center;
